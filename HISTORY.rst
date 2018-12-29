@@ -9,6 +9,11 @@ Pending Release
 
 .. Add new release notes below this line.
 
+1.5.0 (2018-12-29)
+------------------
+
+* Added protection against conflicting conditions being added to a switch.
+
 1.4.0 (2018-08-05)
 ------------------
 
