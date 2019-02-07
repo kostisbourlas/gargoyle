@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 from __future__ import absolute_import, division, print_function
 
-import codecs
 import os
 import re
 
@@ -9,17 +8,17 @@ from setuptools import find_packages, setup
 
 
 def get_version(filename):
-    with codecs.open(filename, 'r', 'utf-8') as fp:
+    with open(filename, 'r') as fp:
         contents = fp.read()
     return re.search(r"__version__ = ['\"]([^'\"]+)['\"]", contents).group(1)
 
 
 version = get_version(os.path.join('gargoyle', '__init__.py'))
 
-with codecs.open('README.rst', 'r', encoding='utf-8') as readme_file:
+with open('README.rst', 'r') as readme_file:
     readme = readme_file.read()
 
-with codecs.open('HISTORY.rst', 'r', encoding='utf-8') as history_file:
+with open('HISTORY.rst', 'r') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
 setup(
@@ -38,16 +37,11 @@ setup(
     packages=find_packages(exclude=['tests', 'tests.*']),
     zip_safe=False,
     install_requires=[
-        'django-modeldict-yplan>=1.5.0',
+        'django-modeldict-yplan>=2.0.0',
         'nexus-yplan>=1.6.0',
         'django-jsonfield>=0.9.2,!=0.9.13,!=1.0.0',
     ],
-    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
-    extras_require={
-        ':python_version=="2.7"': [
-            'contextdecorator',
-        ],
-    },
+    python_requires='>=3.4',
     license='Apache License 2.0',
     include_package_data=True,
     classifiers=[
@@ -64,8 +58,6 @@ setup(
         'License :: OSI Approved :: Apache Software License',
         'Natural Language :: English',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',

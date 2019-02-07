@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-from __future__ import absolute_import, division, print_function, unicode_literals
-
 import django.utils.timezone
 import jsonfield.fields
 from django.db import migrations, models
