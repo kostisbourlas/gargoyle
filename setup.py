@@ -38,7 +38,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'django-modeldict-yplan>=2.0.0',
-        'nexus-yplan>=1.6.0',
+        'nexus-yplan>=2.0.0',
         'django-jsonfield>=0.9.2,!=0.9.13,!=1.0.0',
     ],
     python_requires='>=3.4',

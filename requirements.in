@@ -6,7 +6,7 @@ flake8-commas
 freezegun
 isort
 multilint
-nexus-yplan>=1.6.0
+nexus-yplan>=2.0.0
 Pygments
 pytest
 pytest-cov
