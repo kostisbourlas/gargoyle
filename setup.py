@@ -37,6 +37,7 @@ setup(
     packages=find_packages(exclude=['tests', 'tests.*']),
     zip_safe=False,
     install_requires=[
+        'Django>=1.11',
         'django-modeldict-yplan>=2.0.0',
         'nexus-yplan>=2.0.0',
         'django-jsonfield>=0.9.2,!=0.9.13,!=1.0.0',
@@ -47,9 +48,6 @@ setup(
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Framework :: Django',
-        'Framework :: Django :: 1.8',
-        'Framework :: Django :: 1.9',
-        'Framework :: Django :: 1.10',
         'Framework :: Django :: 1.11',
         'Framework :: Django :: 2.0',
         'Framework :: Django :: 2.1',
