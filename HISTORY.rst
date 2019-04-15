@@ -10,6 +10,7 @@ Pending Release
 .. Add new release notes below this line.
 
 * Drop Django 1.8, 1.9, and 1.10 support. Only Django 1.11+ is supported now.
+* Depend on `nexus-yplan >= 2.1.0` which also dropped old Django support.
 
 2.0.0 (2019-03-03)
 ------------------

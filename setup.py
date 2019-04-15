@@ -39,7 +39,7 @@ setup(
     install_requires=[
         'Django>=1.11',
         'django-modeldict-yplan>=2.0.0',
-        'nexus-yplan>=2.0.0',
+        'nexus-yplan>=2.1.0',
         'django-jsonfield>=0.9.2,!=0.9.13,!=1.0.0',
     ],
     python_requires='>=3.4',
