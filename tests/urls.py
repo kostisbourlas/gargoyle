@@ -17,5 +17,5 @@ urlpatterns = [
     url(r'^nexus/', include(nexus.site.urls)),
     url(r'^admin/', admin.site.urls),
     url(r'^foo/$', lambda request: HttpResponse(), name='gargoyle_test_foo'),
-    url(r'^/?$', RedirectView.as_view(url='/nexus/', permanent=False)),
+    url(r'^$', RedirectView.as_view(url='/nexus/', permanent=False)),
 ]
