@@ -9,6 +9,14 @@ Pending Release
 
 .. Add new release notes below this line.
 
+* **Retired: this project is no longer maintained.** I (Adam Johnson) no longer
+  have time to continue maintaining this. I was doing so since I took on this
+  project, and its related packages
+  `django-modeldict <https://github.com/adamchainz/django-modeldict>`__ and
+  `nexus <https://github.com/adamchainz/nexus>`__, for my ex-employer YPlan. If
+  you'd like to sponsor ongoing maintenance or take it over yourself, please
+  contact me@adamj.eu.
+
 2.1.0 (2019-04-28)
 ------------------
 
